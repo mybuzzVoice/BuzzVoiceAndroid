@@ -6,6 +6,8 @@
     <string name="voice_btn">content_Des</string>
     <string name="settings_btn">content_Des</string>
     <string name="account_btn">content_Des</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="permission_message">This app needs to record audio and recognize your speech.</string>
 
 
 </resources>

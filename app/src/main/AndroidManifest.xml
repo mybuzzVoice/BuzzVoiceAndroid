@@ -21,12 +21,14 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
         <activity android:name="com.example.BuzzVoiceAndroid.SettingsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.SettingsActivity"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
+
         <activity android:name="com.example.BuzzVoiceAndroid.AccountActivity">
             <intent-filter>
                 <action android:name="android.intent.action.AccountActivity"/>
@@ -45,13 +47,13 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <activity android:name="com.example.BuzzVoiceAndroid.LoginActivity">
+        <activity android:name="com.example.BuzzVoiceAndroid.Auth.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.LoginActivity"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <service android:name=".SpeechAPI"/>
+        <service android:name=".API.SpeechAPI"/>
     </application>
 
 </manifest>

@@ -1,8 +1,10 @@
-package com.example.BuzzVoiceAndroid;
+package com.example.BuzzVoiceAndroid.Auth;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.BuzzVoiceAndroid.R;
 
 public class LoginActivity extends AppCompatActivity {
 

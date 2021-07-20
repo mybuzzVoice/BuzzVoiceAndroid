@@ -1,4 +1,4 @@
-package com.example.BuzzVoiceAndroid;
+package com.example.BuzzVoiceAndroid.API;
 
 import android.app.Service;
 import android.content.Context;
@@ -14,6 +14,7 @@ import android.util.Log;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.example.BuzzVoiceAndroid.R;
 import com.google.auth.Credentials;
 import com.google.auth.oauth2.AccessToken;
 import com.google.auth.oauth2.GoogleCredentials;

@@ -9,12 +9,13 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/path_2481"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
+        android:src="@drawable/path_2481"
         android:contentDescription="@string/background"/>
 
     <ImageButton
@@ -24,7 +25,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="21dp"
         android:background="#0000"
-        android:src="@drawable/logo_img_png_1"
+        android:src="@drawable/ellipse_14"
         android:contentDescription="@string/buzz_voice_logo" />
 
     <ImageButton

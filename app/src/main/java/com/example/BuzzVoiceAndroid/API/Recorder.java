@@ -1,4 +1,4 @@
-package com.example.BuzzVoiceAndroid;
+package com.example.BuzzVoiceAndroid.API;
 
 import android.media.AudioFormat;
 import android.media.AudioRecord;
