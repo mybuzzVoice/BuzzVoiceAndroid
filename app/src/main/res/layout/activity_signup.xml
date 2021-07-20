@@ -25,7 +25,9 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="17dp"
         android:layout_marginTop="98dp"
-        android:src="@drawable/component_40__1" />
+        android:src="@drawable/component_40__1"
+        android:layout_marginLeft="17dp"
+        android:layout_alignParentLeft="true" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -35,7 +37,9 @@
         android:layout_marginStart="0dp"
         android:layout_marginTop="153dp"
         android:background="#0000"
-        android:src="@drawable/component_41__1" />
+        android:src="@drawable/component_41__1"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentLeft="true" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -45,7 +49,9 @@
         android:layout_marginTop="27dp"
         android:layout_marginEnd="7dp"
         android:background="#0000"
-        android:src="@drawable/component_38__1" />
+        android:src="@drawable/component_38__1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="7dp" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -62,9 +68,9 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginBottom="260dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginRight="43dp"
+        android:layout_marginBottom="309dp"
         android:background="#0000"
         android:src="@drawable/component_34__1" />
 
@@ -81,7 +87,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:layout_marginBottom="302dp"
+        android:layout_marginBottom="347dp"
         android:background="#0000"
         android:src="@drawable/component_32__1" />
 
@@ -151,9 +157,13 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginLeft="56dp"
-        android:layout_marginTop="223dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="66dp"
+        android:layout_marginLeft="66dp"
+        android:layout_marginTop="233dp"
+        android:background="@null"
         android:hint="Email Address" />
 
     <ImageView
@@ -178,12 +188,10 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="56dp"
-        android:layout_marginLeft="56dp"
-        android:layout_marginTop="301dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginLeft="66dp"
+        android:layout_marginTop="311dp"
+        android:background="@null"
         android:hint="Password"/>
 
     <ImageView
@@ -209,13 +217,10 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="56dp"
-        android:layout_marginLeft="56dp"
-        android:layout_marginTop="373dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginLeft="66dp"
+        android:layout_marginTop="381dp"
+        android:background="@null"
         android:hint="Confirm Password" />
 
 </RelativeLayout>

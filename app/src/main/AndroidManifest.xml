@@ -1,20 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.testsub">
+    package="com.example.BuzzVoiceAndroid">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/logo_img_png_1"
         android:supportsRtl="true"
         android:theme="@style/Theme.TestSub">
-        <activity android:name=".SettingsActivity"></activity>
-        <activity android:name=".AccountActivty" />
-        <activity android:name=".HomeActivity" />
-        <activity android:name=".SignupActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".MainActivity" />
+
+
+
+        <activity android:name="com.example.BuzzVoiceAndroid.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.BuzzVoiceAndroid.SettingsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SettingsActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.BuzzVoiceAndroid.AccountActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.AccountActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.BuzzVoiceAndroid.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.HomeActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.BuzzVoiceAndroid.SignupActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SignupActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.BuzzVoiceAndroid.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.LoginActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:name=".SpeechAPI"/>
     </application>
 
 </manifest>
