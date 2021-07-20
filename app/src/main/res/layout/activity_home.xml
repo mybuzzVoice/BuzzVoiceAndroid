@@ -7,14 +7,16 @@
     tools:context=".HomeActivity">
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/path_2481"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        android:src="@drawable/path_2481"
+        android:contentDescription="@string/background"/>
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -23,20 +25,22 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="21dp"
         android:background="#0000"
-        android:src="@drawable/logo_img_png_1" />
+        android:src="@drawable/ellipse_14"
+        android:contentDescription="@string/buzz_voice_logo" />
 
     <ImageButton
-        android:id="@+id/AccBtn"
+        android:id="@+id/VoiceBtn"
         android:layout_width="69dp"
         android:layout_height="72dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="52dp"
         android:background="#0000"
-        android:src="@drawable/large_icon_button" />
+        android:src="@drawable/large_icon_button"
+        android:contentDescription="@string/voice_btn"/>
 
     <ImageButton
-        android:id="@+id/VoiceBtn"
+        android:id="@+id/SettBtn"
         android:layout_width="69dp"
         android:layout_height="72dp"
         android:layout_alignParentEnd="true"
@@ -46,10 +50,11 @@
         android:layout_marginRight="56dp"
         android:layout_marginBottom="18dp"
         android:background="#0000"
-        android:src="@drawable/component_45__1" />
+        android:src="@drawable/component_45__1"
+        android:contentDescription="@string/settings_btn"/>
 
     <ImageButton
-        android:id="@+id/SettBtn"
+        android:id="@+id/AccBtn"
         android:layout_width="69dp"
         android:layout_height="72dp"
         android:layout_alignParentStart="true"
@@ -59,6 +64,7 @@
         android:layout_marginLeft="56dp"
         android:layout_marginBottom="18dp"
         android:background="#0000"
-        android:src="@drawable/component_44__1" />
+        android:src="@drawable/component_44__1"
+        android:contentDescription="@string/account_btn"/>
 
 </RelativeLayout>

@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">TestSub</string>
+    <string name="app_name">BuzzVoiceAndroid</string>
+
+    <string name="background">content_Des</string>
+    <string name="buzz_voice_logo">content_Des</string>
+    <string name="voice_btn">content_Des</string>
+    <string name="settings_btn">content_Des</string>
+    <string name="account_btn">content_Des</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="permission_message">This app needs to record audio and recognize your speech.</string>
+
+
 </resources>
