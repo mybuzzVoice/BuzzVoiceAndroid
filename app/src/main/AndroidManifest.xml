@@ -15,7 +15,7 @@
 
 
 
-        <activity android:name="com.example.BuzzVoiceAndroid.MainActivity">
+        <activity android:name="com.example.BuzzVoiceAndroid.Auth.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
@@ -41,7 +41,7 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <activity android:name="com.example.BuzzVoiceAndroid.SignupActivity">
+        <activity android:name="com.example.BuzzVoiceAndroid.Auth.SignupActivity">
             <intent-filter>
                 <action android:name="android.intent.action.SignupActivity"/>
                 <category android:name="android.intent.category.DEFAULT"/>

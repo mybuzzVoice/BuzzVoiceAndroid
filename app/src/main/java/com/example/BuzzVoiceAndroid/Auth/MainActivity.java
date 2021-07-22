@@ -1,26 +1,17 @@
-package com.example.BuzzVoiceAndroid;
+package com.example.BuzzVoiceAndroid.Auth;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 
-import android.Manifest;
-import android.content.ComponentName;
 import android.content.Intent;
-import android.content.ServiceConnection;
-import android.content.pm.PackageManager;
-import android.content.res.Resources;
 import android.os.Bundle;
-import android.os.IBinder;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.TextView;
 
-import com.example.BuzzVoiceAndroid.API.Recorder;
-import com.example.BuzzVoiceAndroid.API.SpeechAPI;
+
 import com.example.BuzzVoiceAndroid.Auth.LoginActivity;
+import com.example.BuzzVoiceAndroid.Auth.SignupActivity;
+import com.example.BuzzVoiceAndroid.HomeActivity;
+import com.example.BuzzVoiceAndroid.R;
 
 public class MainActivity extends AppCompatActivity {
     private ImageButton loginBtn, signupBtn, guestBtn;
