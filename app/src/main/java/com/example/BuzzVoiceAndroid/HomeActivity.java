@@ -1,8 +1,12 @@
 package com.example.BuzzVoiceAndroid;
 
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -12,6 +16,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 import java.util.Locale;
+
+import static android.content.ContentValues.TAG;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -64,6 +70,7 @@ public class HomeActivity extends AppCompatActivity {
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault());
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivityForResult(intent, REQUEST_RECORD_PERMISSION);
+                Log.i(TAG, "Device is Connected ++++++++++++ ");
         }
         else {
             Toast.makeText(getApplicationContext(), "Your device doesn't support voice software.", Toast.LENGTH_SHORT).show();
@@ -93,7 +100,7 @@ public class HomeActivity extends AppCompatActivity {
             }
         }
     }
-
+    
 
 
 

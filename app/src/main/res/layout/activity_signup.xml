@@ -42,6 +42,7 @@
         android:layout_alignParentLeft="true" />
 
     <ImageButton
+        android:id="@+id/goLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -68,9 +69,9 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="43dp"
-        android:layout_marginRight="43dp"
-        android:layout_marginBottom="309dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginRight="41dp"
+        android:layout_marginBottom="246dp"
         android:background="#0000"
         android:src="@drawable/component_34__1" />
 
@@ -83,13 +84,14 @@
         android:src="@drawable/component_37__1" />
 
     <ImageButton
+        android:id="@+id/signUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:layout_marginBottom="347dp"
+        android:layout_marginBottom="277dp"
         android:background="#0000"
-        android:src="@drawable/component_32__1" />
+        android:src="@drawable/component_24__1" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -155,6 +157,7 @@
         android:src="@drawable/icon_feather_mail" />
 
     <EditText
+        android:id="@+id/email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -186,6 +189,7 @@
         android:src="@drawable/icon_feather_lock" />
 
     <EditText
+        android:id="@+id/pass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="66dp"
@@ -215,6 +219,7 @@
         android:src="@drawable/icon_feather_lock" />
 
     <EditText
+        android:id="@+id/passConfirm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="66dp"

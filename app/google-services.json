@@ -1,0 +1,91 @@
+{
+  "project_info": {
+    "project_number": "578605635310",
+    "firebase_url": "https://buzzspeech-2df7f.firebaseio.com",
+    "project_id": "buzzspeech-2df7f",
+    "storage_bucket": "buzzspeech-2df7f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:578605635310:android:b1fb3657bbae59c820c5ff",
+        "android_client_info": {
+          "package_name": "com.example.BuzzVoiceAndroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "578605635310-51g3odgeihmg8tf4ueooq35057n7te33.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaIcrAzCLmJ0s-TTnek8dvPm6yZMHbe4w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "578605635310-51g3odgeihmg8tf4ueooq35057n7te33.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "578605635310-22je9lj75teoik7mvqkosbnq3m153jgi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.buzz.BuzzVoiceIOS"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:578605635310:android:753db6ddfcef1ec020c5ff",
+        "android_client_info": {
+          "package_name": "com.example.loginfacegoog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "578605635310-r2lb1tt8l9bj20vvooq8vir4o31g7tmd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.loginfacegoog",
+            "certificate_hash": "babab243b61ec6375bef3a07b3dae3d4d7b6529d"
+          }
+        },
+        {
+          "client_id": "578605635310-51g3odgeihmg8tf4ueooq35057n7te33.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaIcrAzCLmJ0s-TTnek8dvPm6yZMHbe4w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "578605635310-51g3odgeihmg8tf4ueooq35057n7te33.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "578605635310-22je9lj75teoik7mvqkosbnq3m153jgi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.buzz.BuzzVoiceIOS"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

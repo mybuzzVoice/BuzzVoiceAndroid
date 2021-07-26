@@ -3,6 +3,7 @@
     package="com.example.BuzzVoiceAndroid">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.RECORD_AUDIO"/>
 
     <application
@@ -11,7 +12,7 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/logo_img_png_1"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TestSub">
+        android:theme="@style/Theme.BuzzVoiceAndroid">
 
 
 
@@ -53,7 +54,7 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <service android:name=".API.SpeechAPI"/>
+
     </application>
 
 </manifest>
