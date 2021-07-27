@@ -1,9 +1,6 @@
 package com.example.BuzzVoiceAndroid;
 
-import android.content.Context;
 import android.content.Intent;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import android.util.Log;
@@ -12,7 +9,19 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.Query;
+import com.google.firebase.firestore.QuerySnapshot;
+
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.Locale;
@@ -26,6 +35,10 @@ public class HomeActivity extends AppCompatActivity {
 
     private static final int REQUEST_RECORD_PERMISSION = 1;
     private TextView outputText;
+    DocumentReference documentReference;
+    FirebaseFirestore firebaseFirestore;
+    CollectionReference collectionReference;
+
 
 
     @Override
@@ -62,6 +75,15 @@ public class HomeActivity extends AppCompatActivity {
 
             }
         });
+
+        /**firebaseFirestore.collection("buzzname")
+                .whereEqualTo("buzzname" buzzlink)
+                .get();**/
+
+        collectionReference = FirebaseFirestore.getInstance().collection("buzzname");
+
+
+
     }
 
     public void openVoiceActivity() {
@@ -99,6 +121,16 @@ public class HomeActivity extends AppCompatActivity {
                 break;
             }
         }
+    }
+
+    public void ParseSpeech() {
+        String speech = outputText.getText().toString().trim();
+        return;
+    }
+
+    public void SlugifySpeech() {
+        final String slug = outputText.getText().toString().toLowerCase().replaceAll("[^a-z0-9-]", "-");
+        return;
     }
     
 
