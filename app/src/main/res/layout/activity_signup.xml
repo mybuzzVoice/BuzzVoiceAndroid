@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignupActivity">
+    tools:context=".Auth.SignupActivity">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -42,6 +42,7 @@
         android:layout_alignParentLeft="true" />
 
     <ImageButton
+        android:id="@+id/goLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -63,14 +64,15 @@
         android:src="@drawable/already_have_an_account_login_now_" />
 
     <ImageButton
+        android:id="@+id/forgotPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="43dp"
-        android:layout_marginRight="43dp"
-        android:layout_marginBottom="309dp"
+        android:layout_below="@+id/signUp"
+        android:layout_alignEnd="@+id/signUp"
+        android:layout_alignRight="@+id/signUp"
+        android:layout_marginTop="-250dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="14dp"
         android:background="#0000"
         android:src="@drawable/component_34__1" />
 
@@ -83,13 +85,16 @@
         android:src="@drawable/component_37__1" />
 
     <ImageButton
+        android:id="@+id/signUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/conHolder"
         android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:layout_marginBottom="347dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="277dp"
         android:background="#0000"
-        android:src="@drawable/component_32__1" />
+        android:src="@drawable/component_24__1" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -137,6 +142,7 @@
         android:src="@drawable/gmail"/>
 
     <ImageView
+        android:id="@+id/emailHolder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -155,23 +161,25 @@
         android:src="@drawable/icon_feather_mail" />
 
     <EditText
+        android:id="@+id/email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="66dp"
-        android:layout_marginLeft="66dp"
-        android:layout_marginTop="233dp"
+        android:layout_alignStart="@+id/emailHolder"
+        android:layout_alignLeft="@+id/emailHolder"
+        android:layout_alignTop="@+id/emailHolder"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="12dp"
         android:background="@null"
         android:hint="Email Address" />
 
     <ImageView
+        android:id="@+id/passHolder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/emailHolder"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="298dp"
+        android:layout_marginTop="27dp"
         android:src="@drawable/rectangle__1" />
 
     <ImageView
@@ -186,20 +194,23 @@
         android:src="@drawable/icon_feather_lock" />
 
     <EditText
+        android:id="@+id/pass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="66dp"
-        android:layout_marginLeft="66dp"
-        android:layout_marginTop="311dp"
+        android:layout_alignStart="@+id/email"
+        android:layout_alignLeft="@+id/email"
+        android:layout_alignTop="@+id/passHolder"
+        android:layout_marginTop="12dp"
         android:background="@null"
-        android:hint="Password"/>
+        android:hint="Password" />
 
     <ImageView
+        android:id="@+id/conHolder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="370dp"
+        android:layout_below="@+id/passHolder"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
         android:src="@drawable/rectangle__1" />
 
     <ImageView
@@ -215,11 +226,13 @@
         android:src="@drawable/icon_feather_lock" />
 
     <EditText
+        android:id="@+id/passConfirm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="66dp"
-        android:layout_marginLeft="66dp"
-        android:layout_marginTop="381dp"
+        android:layout_alignStart="@+id/pass"
+        android:layout_alignLeft="@+id/pass"
+        android:layout_alignTop="@+id/conHolder"
+        android:layout_marginTop="12dp"
         android:background="@null"
         android:hint="Confirm Password" />
 

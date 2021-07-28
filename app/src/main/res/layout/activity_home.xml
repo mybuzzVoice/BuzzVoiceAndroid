@@ -6,6 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
+    <TextView
+        android:id="@+id/voiceTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginBottom="307dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -25,7 +39,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="21dp"
         android:background="#0000"
-        android:src="@drawable/ellipse_14"
+        android:src="@drawable/logo_img_png"
         android:contentDescription="@string/buzz_voice_logo" />
 
     <ImageButton
