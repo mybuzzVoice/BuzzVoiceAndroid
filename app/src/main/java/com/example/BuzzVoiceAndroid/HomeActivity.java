@@ -13,20 +13,26 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
 import org.jetbrains.annotations.NotNull;
 
+import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 
 import static android.content.ContentValues.TAG;
+import static java.util.Collections.addAll;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -75,15 +81,6 @@ public class HomeActivity extends AppCompatActivity {
 
             }
         });
-
-        /**firebaseFirestore.collection("buzzname")
-                .whereEqualTo("buzzname" buzzlink)
-                .get();**/
-
-        collectionReference = FirebaseFirestore.getInstance().collection("buzzname");
-
-
-
     }
 
     public void openVoiceActivity() {
@@ -117,6 +114,8 @@ public class HomeActivity extends AppCompatActivity {
                 if (resultPerm == RESULT_OK && null != data) {
                     ArrayList<String> result = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
                     outputText.setText(result.get(0));
+                    ParseSpeech();
+
                 }
                 break;
             }
@@ -124,14 +123,36 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void ParseSpeech() {
-        String speech = outputText.getText().toString().trim();
-        return;
+
+
+        String speech = outputText.getText().toString();
+
+        String displayStr = speech.replaceAll("Buzz ", "");
+        System.out.println(displayStr);
+
+        String searchStr = displayStr.toLowerCase().replaceAll("[^a-z\\d-_\\s?$*#!']|\\?(?==)|#(?=\\/)|\\/(?=#)", "")
+                .replaceAll("'", "");
+        System.out.println(searchStr);
+
+        String slugStr = searchStr.replaceAll(" ", "-");
+        System.out.println(slugStr);
+
+        firebaseFirestore.collection("buzzname")
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+            @Override
+            public void onComplete(@NonNull @NotNull Task<QuerySnapshot> task) {
+                if (task.isSuccessful()) {
+                    for (QueryDocumentSnapshot document : task.getResult()) {
+                        Log.d(TAG, document.getId() + " => " + document.getData());
+                    }
+                } else {
+                    Log.d(TAG, "Error getting documents: ", task.getException());
+                }
+            }
+        });
     }
 
-    public void SlugifySpeech() {
-        final String slug = outputText.getText().toString().toLowerCase().replaceAll("[^a-z0-9-]", "-");
-        return;
-    }
     
 
 
